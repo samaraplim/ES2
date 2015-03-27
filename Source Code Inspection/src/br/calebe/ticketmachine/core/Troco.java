@@ -8,9 +8,10 @@ import java.util.Iterator;
  */
 class Troco {
 
-    protected PapelMoeda[] papeisMoeda;
+    protected PapelMoeda[] papeisMoeda= new PapelMoeda[6];
 
     public Troco(int valor) {
+        /*
         papeisMoeda = new PapelMoeda[6];
         int count = 0;
         while (valor % 100 != 0) {
@@ -42,8 +43,8 @@ class Troco {
             count++;
         }
         papeisMoeda[1] = new PapelMoeda(2, count);
-    }
-
+    */}
+    
     public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }

@@ -45,6 +45,40 @@ class Troco {
         papeisMoeda[1] = new PapelMoeda(2, count);
     */}
     
+    public PapelMoeda[] calculaTroco(int troco){
+        
+        int aux=troco;
+        while(aux!=0){
+            
+            if(aux>=100){
+                int qtde =  aux%100;
+
+                if( qtde!=0){
+                    PapelMoeda cem= new PapelMoeda(100, qtde);
+                    papeisMoeda[6]=cem;
+                }
+                
+            }
+            else if(aux>=50){
+                
+            }
+            else if(aux>=20){
+                
+            }
+            else if(aux>=10){
+                
+            }
+            else if(aux>=5){
+                
+            }
+            else if(aux>=2){
+                
+            }
+            
+        }
+    
+    }
+    
     public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }

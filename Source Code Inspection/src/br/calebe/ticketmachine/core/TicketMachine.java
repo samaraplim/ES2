@@ -47,6 +47,7 @@ public class TicketMachine {
         String result = "*****************\n";
         result += "*** R$ " + saldo + ",00 ****\n";
         result += "*****************\n";
+        saldo=saldo-valor;
         return result;
     }
 }
